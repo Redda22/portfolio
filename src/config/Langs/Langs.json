@@ -1,0 +1,134 @@
+[
+    {
+        "id": 0,
+        "LangAcronym": "EN",
+        "Header": {
+            "HeaderName": "Redda",
+            "Menu": {
+                "Profile": "Profile",
+                "Projects": "Projects",
+                "Contact": "Contact"
+            }
+        },
+        "BeginView": {
+            "Names": "Redda Arghib",
+            "Status": "Web Developer",
+            "Welcome": "Welcome"
+        },
+        "ProfileView": {
+            "ProfileInfo": {
+                "Speech": {
+                    "Status": "Web Developer",
+                    "Degree": "Associate's degree in Computer Science",
+                    "EnglishLevel": "English Level : B2",
+                    "Next": "In expanding skills towards the blockchain sector",
+                    "CV": "My CV"
+                },
+                "LangsTechs": {
+                    "LanguagesTechnologies": "Practiced Languages and Technologies",
+                    "L1": "HTML - CSS - JavaScript",
+                    "L2": "LESS & SCSS Preprocessors",
+                    "L3": "React & Vue",
+                    "L4": "Python",
+                    "L5": "C#"
+                },
+                "COI": {
+                    "Title": "My Centers of Interest",
+                    "COI1": "Web Design",
+                    "COI2": "Robotic",
+                    "COI3": "FPV Drone",
+                    "COI4": "Blockchain"
+                }
+            }
+        },
+        "ProjectsView": {
+            "Title" : "Projects",
+            "Filter": {
+                "all": "All",
+                "web": "Web Design",
+                "robotic": "Robotic & Drone",
+                "blockchain": "Blockchain & Web3"
+            },
+            "noProjects": {
+                "noProjects1": "No",
+                "noProjects2": "projects are available at the moment."
+            }
+            
+        },
+        "ContactView": {
+            "Title": "Contact",
+            "Form": {
+                "Name":"Name",
+                "Email": "Email",
+                "Message": "Message",
+                "Send" : "Send"
+            }
+        }
+    },
+    {
+        "id": 1,
+        "LangAcronym": "FR",
+        "Header": {
+            "HeaderName": "Redda",
+            "Menu": {
+                "Profile": "Profil",
+                "Projects": "Projets",
+                "Contact": "Contact"
+            }
+        },
+        "BeginView": {
+            "Names": "Redda Arghib",
+            "Status": "Développeur Web",
+            "Welcome": "Bienvenue"
+        },
+        "ProfileView": {
+            "ProfileInfo": {
+                "Speech": {
+                    "Status": "Développeur Web",
+                    "Degree": "Bac +2 en Informatique",
+                    "EnglishLevel": "Niveau d'Anglais : B2",
+                    "Next": "En développement de compétences vers le secteur de la Blockchain.",
+                    "CV": "Mon CV"
+                },
+                "LangsTechs": {
+                    "LanguagesTechnologies": "Languages et Technologies Pratiqué",
+                    "L1": "HTML - CSS - JavaScript",
+                    "L2": "Préprocesseurs LESS & SCSS",
+                    "L3": "React & Vue",
+                    "L4": "Python",
+                    "L5": "C#"
+                },
+                "COI": {
+                    "Title": "Mes Centres d'Intérêts",
+                    "COI1": "Conception Web",
+                    "COI2": "Robotique",
+                    "COI3": "Drone FPV",
+                    "COI4": "Blockchain"
+                }
+            }
+        },
+        "ProjectsView": {
+            "Title" : "Projets",
+            "Filter": {
+                "all": "Tout",
+                "web": "Conception Web",
+                "robotic": "Robotique & Drone",
+                "blockchain": "Blockchain & Web3"
+            },
+            "noProjects": {
+                "noProjects1": "Aucun projets",
+                "noProjects2": "ne sont disponible pour le moment."
+            }
+            
+        },
+        "ContactView": {
+            "Title": "Contact",
+            "Form": {
+                "Name":"Nom",
+                "Email": "Email",
+                "Message": "Message",
+                "Send" : "Envoyer"
+            }
+        }
+    }
+]

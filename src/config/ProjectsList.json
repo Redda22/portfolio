@@ -1,0 +1,123 @@
+[
+    {
+        "id": 0,
+        "type": "robotic",
+        "mainTitle": "Io",
+        "data": [
+            {
+                "title": "Io",
+                "usedTechs": "Python / HTML - CSS - JavaScript",
+                "description": "This connected exploration robot can be remotely operated from anywhere in the world through the website hosted on its server. Its continuous evolution since its first version in 2015 now makes it the most advanced and comprehensive version of this project."
+            },
+            {
+                "title": "Io",
+                "usedTechs": "Python / HTML - CSS - JavaScript",
+                "description": "Ce robot d'exploration connecté peut être contrôlé à distance depuis n'importe quel endroit dans le monde grâce au site web accessible via son serveur. Son développement continu depuis sa première version en 2015 en fait désormais la version la plus avancée et complète de ce projet."
+            },
+            {
+                "title": "",
+                "usedTechs": "",
+                "description": ""
+            }
+        ],
+        "mediaFile" : "Io.png",
+        "links": [
+            {
+                "platform": "webLink",
+                "link": "/Io",
+                "externalLink": false
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "type": "web",
+        "mainTitle": "Kasa",
+        "data": [
+            {
+                "title": "Kasa",
+                "usedTechs": "React - SCSS",
+                "description": "Peer-to-peer apartment rental website."
+            },
+            {
+                "title": "Kasa",
+                "usedTechs": "React - SCSS",
+                "description": "Site de location d’appartements entre particuliers."
+            },
+            {
+                "title": "",
+                "usedTechs": "",
+                "description": ""
+            }
+        ],
+        "mediaFile" : "Kasa.svg",
+        "links": [
+            {
+                "platform": "webLink",
+                "link": "/Kasa",
+                "externalLink": true
+            },
+            {
+                "platform": "github",
+                "link": "https://github.com/Redda22/kasa"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "type": "web",
+        "mainTitle": "Booki",
+        "data": [
+            {
+                "title": "Booki",
+                "usedTechs": "HTML - CSS",
+                "description": "Summer travel destination selection website."
+            },
+            {
+                "title": "Io",
+                "usedTechs": "HTML - CSS",
+                "description": "Site de sélection de destinations de voyages estivaux."
+            },
+            {
+                "title": "",
+                "usedTechs": "",
+                "description": ""
+            }
+        ],
+        "mediaFile" : "Booki.png",
+        "links": [
+            {
+                "platform": "webLink",
+                "link": "/Booki",
+                "externalLink": true
+            },
+            {
+                "platform": "github",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "type": "robotic",
+        "mainTitle": "ArtisanalDrone",
+        "data": [
+            {
+                "title": "Artisanal Drone",
+                "usedTechs": "IFlight",
+                "description": "Quadcopter drone designed to deliver optimal stability and flight tranquility. It falls within the FPV drone category and is suitable for both beginners and experts. This creation has allowed me to deepen my understanding of fundamental concepts in aerodynamics and analog communication technologies."
+            },
+            {
+                "title": "Drone Artisanal",
+                "usedTechs": "IFlight",
+                "description": "Drone quadricoptère conçu pour assurer une stabilité et une tranquillité de vol optimales. Il appartient à la catégorie des drones FPV et convient aussi bien aux débutants qu'aux experts. Cette création m'a permis d'approfondir ma compréhension des concepts fondamentaux en aérodynamique et en technologies de communication analogiques."
+            },
+            {
+                "title": "",
+                "usedTechs": "",
+                "description": ""
+            }
+        ],
+        "mediaFile" : "ArtisanalDrone.jpg"
+    }
+]

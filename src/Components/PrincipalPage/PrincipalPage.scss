@@ -1,0 +1,1098 @@
+/*GENERAL*/
+.PrincipalPage {
+  margin: 0;
+  background-color: var(--background-color1);
+  width: 100%;
+  //padding-top: 7vh; // Le header occupe une hauteur de 7vh
+
+  .BeginView {
+    position: relative;
+    height: 85vh;
+    background: mix(#3f3251, #002025, 70%);
+    background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+    background-image: -webkit-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+    background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    #tsparticles {
+      height: 100%;
+      width: 100%;
+    }
+
+    .BeginContent {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 35%;
+
+      h1,
+      h2 {
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+        margin-bottom: 6vh;
+        text-shadow: 3px 3px 3px black;
+      }
+
+      .Name {
+        font-size: 2.5vw;
+      }
+
+      .Status {
+        font-size: 3vw;
+        color: var(--special-color);
+        //letter-spacing: 0.5vw;
+        text-transform: uppercase;
+      }
+
+      .Welcome {
+        font-weight: 300;
+        font-size: 4vw;
+      }
+    }
+
+    .socialLinks {
+      position: absolute;
+      width: 60vh;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      transform: rotate(-90deg);
+      left: -26vh;
+
+      hr {
+        border: none;
+        height: 1px;
+        width: 6vw;
+        background-color: var(--text-color);
+        margin: 0;
+      }
+
+      div {
+        width: 1.8vw;
+        aspect-ratio: 1/1;
+        background-color: transparent;
+        border: solid 2px var(--text-color);
+        border-radius: 50%;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 0.85vw;
+      }
+    }
+
+  }
+
+  .ProfileView {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    //padding-top: 20vh;
+    background-color: var(--background-color1);
+    box-shadow: 0px -2px 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+
+    .ArrowDiv {
+      height: 15vh;
+      margin-bottom: 5vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+
+      .Arrow {
+        margin: 0;
+        height: 40%;
+        animation: arrowMov 5s ease-in-out infinite;
+
+        &.isScrolling {
+          opacity: 0;
+        }
+      }
+
+      @keyframes arrowMov {
+        0% {
+          transform: translateY(-1vh);
+        }
+
+        50% {
+          transform: translateY(1vh);
+        }
+
+        100% {
+          transform: translateY(-1vh);
+        }
+      }
+    }
+
+    .ProfileInfo {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-color);
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+        border-radius: 50% 0 50% 0;
+        background-color: gray;
+        border: solid 1px var(--text-color);
+      }
+
+      .Speech,
+      .LangsTechs {
+        position: relative;
+        height: calc(100% + 2px);
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+
+        hr {
+          position: absolute;
+          margin: 0;
+          padding: 0;
+          border: none;
+          height: 1px;
+          width: 100%;
+          background-color: var(--text-color);
+        }
+
+        div {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          h3 {
+            display: flex;
+            align-items: center;
+            height: 20%;
+            font-size: 1.3vw;
+          }
+
+          ul {
+            height: 80%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+            li {
+              padding: 0;
+              margin: 0;
+              font-size: 1vw;
+              list-style-type: none;
+              //margin-bottom: 10%;
+              text-align: center;
+              height: auto;
+              //letter-spacing: 0.05vw;
+              //line-height: 0.4vw;
+            }
+          }
+        }
+
+        &.Speech {
+          hr {
+            right: 0;
+            bottom: 0;
+          }
+        }
+
+        &.LangsTechs {
+          hr {
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+
+    .CentersOfInterests {
+      height: 40%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      color: var(--text-color);
+
+      .InterestsCards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        /* COI Components */
+
+      }
+    }
+
+  }
+
+  .ProjectsView {
+    height: 100vh;
+    background-color: var(--background-color1);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .ProjectsSectionTitle {
+      padding: 0;
+      margin: 0;
+      font-size: 2vw;
+    }
+
+    .Filter {
+      width: auto;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+
+      button {
+        width: 9vw;
+        height: 4vh;
+        margin: 1vw;
+        border: none;
+        cursor: pointer;
+        //border-radius: 10px;
+        background-color: transparent;
+        border: solid 1px var(--special-color);
+        color: var(--special-color);
+        user-select: none;
+        white-space: nowrap;
+        letter-spacing: 0.06vw;
+        font-size: 75%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        transition-duration: 500ms;
+
+        &.selected {
+          width: 11vw;
+          //background-color: var(--text-color);
+          border: solid 1px var(--text-color);
+          color: var(--text-color);
+        }
+      }
+    }
+
+    hr {
+      margin: 0;
+      padding: 0;
+      border: none;
+      width: 70%;
+      height: 1px;
+      background-color: var(--text-color);
+    }
+
+    .RenderedProjects {
+      position: relative;
+      background-color: var(--background-color1);
+      width: 99.89vw;
+      min-height: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      .SliderButtonsDiv {
+        z-index: 3;
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        pointer-events: none;
+
+        button {
+          margin-right: 3vw;
+          margin-left: 3vw;
+          height: 10vh;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+          border: none;
+          box-shadow: 2px 2px 3px black;
+          background-color: rgba(34, 34, 34, 0.603);
+          pointer-events: fill;
+          cursor: pointer;
+          transition-duration: 500ms;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:nth-child(1).ArrowStart {
+            opacity: 0;
+            pointer-events: none;
+          }
+
+          &:nth-child(2).ArrowEnd {
+            opacity: 0;
+            pointer-events: none;
+          }
+
+          img {
+            width: 70%;
+            aspect-ratio: 1/1;
+          }
+
+          &:nth-child(1) img {
+            transform: rotate(180deg);
+          }
+
+          &:nth-child(2) img {
+            transform: rotate(0deg);
+          }
+        }
+      }
+
+      .Slider {
+        position: relative;
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        scroll-behavior: smooth;
+
+        &.inLoading {
+          scroll-behavior: auto;
+        }
+      }
+
+      .Slide {
+        position: absolute;
+        min-width: 100%;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        transition: width 0.5s ease-in-out;
+        transition: opacity 0.2s;
+        opacity: 1;
+
+        &.inLoading {
+          opacity: 0;
+        }
+
+        /* Projects Components */
+
+      }
+    }
+  }
+
+  .ContactView {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--text-color);
+
+    .ContactSectionTitle {
+      padding: 0;
+      margin: 0;
+      font-size: 2vw;
+      height: 20%;
+    }
+
+    form {
+      width: 50%;
+      height: 60%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: rgb(27, 29, 40);
+
+
+      div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        &:nth-child(1) {
+          height: 20%;
+
+          input {
+            height: 30%;
+          }
+        }
+
+        &:nth-child(2) {
+          height: 20%;
+
+          input {
+            height: 30%;
+          }
+        }
+
+        &:nth-child(3) {
+          height: 50%;
+        }
+
+        label {
+          font-size: 1.1vw;
+          margin: 0;
+          padding: 0;
+          margin-bottom: 1%;
+        }
+
+        input {
+          margin: 0;
+          padding: 0;
+          width: 50%;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          border-bottom: solid 1px white;
+          color: var(--special-color);
+          text-align: center;
+          font-size: 1.2vw;
+          font-family: 'Nunito', sans-serif;
+
+        }
+
+        textarea {
+          border: none;
+          outline: none;
+          resize: none;
+          width: 75%;
+          height: 70%;
+          background-color: transparent;
+          border-bottom: solid 1px white;
+          color: var(--special-color);
+          overflow-x: hidden;
+          overflow-y: scroll;
+          font-size: 1vw;
+          font-family: 'Nunito', sans-serif;
+
+          &::-webkit-scrollbar-track {
+            background-color: transparent;
+            /* Couleur de fond de la piste */
+          }
+        }
+      }
+
+      button {
+        width: 20%;
+        height: 8%;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 0.9vw;
+        font-weight: bold;
+        background-color: var(--special-color);
+        cursor: pointer;
+      }
+
+
+    }
+  }
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .PrincipalPage {
+    .BeginView {
+      height: 80vh;
+
+      .BeginContent {
+        margin-top: 10vh;
+        height: 50%;
+
+        h1,
+        h2 {
+          color: var(--text-color);
+          margin: 0;
+          padding: 0;
+          margin-bottom: 6vh;
+          text-shadow: 3px 3px 3px black;
+        }
+
+        .Name {
+          font-size: 7vw;
+        }
+
+        .Status {
+          font-size: 8vw;
+        }
+
+        .Welcome {
+          font-size: 9vw;
+        }
+      }
+
+      .socialLinks {
+        //position: absolute;
+        width: 80vw;
+        transform: rotate(0deg);
+        left: auto;
+        bottom: 5%;
+
+        hr {
+          width: 15vw;
+        }
+
+        div {
+          width: 4vw;
+          aspect-ratio: 1/1;
+        }
+
+        a {
+          text-decoration: none;
+          color: var(--text-color);
+          font-size: 3vw;
+          width: 16vw;
+          text-align: center;
+        }
+      }
+
+    }
+
+    .ProfileView {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: auto;
+
+      .ArrowDiv {
+        height: 12vh;
+        aspect-ratio: 1/1;
+        margin-bottom: 10vh;
+        opacity: 1;
+
+        .Arrow {
+          width: 12vw;
+        }
+      }
+
+      .ProfileInfo {
+        flex-direction: column;
+        height: auto;
+
+        img {
+          height: 25vh;
+          aspect-ratio: 1/1;
+          border-radius: 50% 0 50% 0;
+        }
+
+        .Speech,
+        .LangsTechs {
+          height: auto;
+          width: calc(25vh + 2px);
+
+          hr {
+            height: 100%;
+            width: 1px;
+          }
+
+          div {
+            height: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+
+            h3 {
+              height: auto;
+              font-size: 4vw;
+              text-align: center;
+            }
+
+            ul {
+              li {
+                font-size: 3.5vw;
+                margin-bottom: 5%;
+                margin-top: 5%;
+                text-align: center;
+                width: 90%;
+              }
+            }
+          }
+
+          &.Speech {
+            hr {
+              right: 0;
+              bottom: 0;
+            }
+          }
+
+          &.LangsTechs {
+            hr {
+              left: 0;
+              top: 0;
+            }
+          }
+        }
+      }
+
+      .CentersOfInterests {
+        height: auto;
+
+        .InterestsCards {
+          display: flex;
+
+          /* COI Components */
+
+        }
+      }
+
+    }
+
+    .ProjectsView {
+      height: auto;
+      margin-top: 10vh;
+
+      .ProjectsSectionTitle {
+        font-size: 5vw;
+      }
+
+      .Filter {
+
+        width: auto;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5vh;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        button {
+          width: 35vw;
+          height: 4vh;
+
+          &.selected {
+            width: 40vw;
+          }
+        }
+      }
+
+      hr {
+        border: none;
+        width: 90%;
+        height: 1px;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+      }
+
+      .RenderedProjects {
+        min-height: 65vh;
+        height: 60vh;
+
+        .SliderButtonsDiv {
+          display: none;
+        }
+
+        .Slider {
+          overflow-y: hidden;
+          overflow-x: scroll;
+
+          &::-webkit-scrollbar-track {
+            background-color: transparent;
+          }
+          &::-webkit-scrollbar {
+            height: 1px;
+          }
+        }
+
+        .Slide {
+          height: auto;
+          /* Projects Components */
+
+        }
+      }
+    }
+
+    .ContactView {
+      height: 100vh;
+
+      .ContactSectionTitle {
+        font-size: 5vw;
+        height: 20%;
+      }
+
+      form {
+        width: 80%;
+        height: 60%;
+
+
+        div {
+          width: 100%;
+
+          &:nth-child(1) {
+            height: 20%;
+
+            input {
+              height: 30%;
+            }
+          }
+
+          &:nth-child(2) {
+            height: 20%;
+
+            input {
+              height: 30%;
+            }
+          }
+
+          &:nth-child(3) {
+            height: 50%;
+          }
+
+          label {
+            font-size: 3.5vw;
+          }
+
+          input {
+            margin: 0;
+            padding: 0;
+            width: 70%;
+            font-size: 4vw;
+
+          }
+
+          textarea {
+            font-size: 4vw;
+
+            &::-webkit-scrollbar-track {
+              background-color: transparent;
+              /* Couleur de fond de la piste */
+            }
+          }
+        }
+
+        button {
+          width: 30%;
+          height: 8%;
+          font-size: 3vw;
+        }
+
+
+      }
+    }
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .PrincipalPage {
+    .BeginView {
+      height: 75vh;
+
+      .BeginContent {
+        margin-top: 10vh;
+        height: 50%;
+
+        h1,
+        h2 {
+          color: var(--text-color);
+          margin: 0;
+          padding: 0;
+          margin-bottom: 6vh;
+          text-shadow: 3px 3px 3px black;
+        }
+
+        .Name {
+          font-size: 7vw;
+        }
+
+        .Status {
+          font-size: 8vw;
+        }
+
+        .Welcome {
+          font-size: 9vw;
+        }
+      }
+
+      .socialLinks {
+        //position: absolute;
+        width: 80vw;
+        transform: rotate(0deg);
+        left: auto;
+        bottom: 5%;
+
+        hr {
+          width: 15vw;
+        }
+
+        div {
+          width: 4vw;
+          aspect-ratio: 1/1;
+        }
+
+        a {
+          text-decoration: none;
+          color: var(--text-color);
+          font-size: 3vw;
+          width: 16vw;
+          text-align: center;
+        }
+      }
+
+    }
+
+    .ProfileView {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: auto;
+
+      .ArrowDiv {
+        height: 12vh;
+        aspect-ratio: 1/1;
+        margin-bottom: 10vh;
+        opacity: 1;
+
+        .Arrow {
+          width: 12vw;
+        }
+      }
+
+      .ProfileInfo {
+        flex-direction: column;
+        height: auto;
+
+        img {
+          height: 25vh;
+          aspect-ratio: 1/1;
+          border-radius: 50% 0 50% 0;
+        }
+
+        .Speech,
+        .LangsTechs {
+          height: auto;
+          width: calc(25vh + 2px);
+
+          hr {
+            height: 100%;
+            width: 1px;
+          }
+
+          div {
+            height: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+
+            h3 {
+              height: auto;
+              font-size: 4vw;
+              text-align: center;
+            }
+
+            ul {
+              li {
+                font-size: 3.5vw;
+                margin-bottom: 5%;
+                margin-top: 5%;
+                text-align: center;
+                width: 90%;
+              }
+            }
+          }
+
+          &.Speech {
+            hr {
+              right: 0;
+              bottom: 0;
+            }
+          }
+
+          &.LangsTechs {
+            hr {
+              left: 0;
+              top: 0;
+            }
+          }
+        }
+      }
+
+      .CentersOfInterests {
+        height: auto;
+
+        .InterestsCards {
+          display: flex;
+
+          /* COI Components */
+
+        }
+      }
+
+    }
+
+    .ProjectsView {
+      height: auto;
+      margin-top: 10vh;
+
+      .ProjectsSectionTitle {
+        font-size: 5vw;
+      }
+
+      .Filter {
+
+        width: auto;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5vh;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        button {
+          width: 35vw;
+          height: 4vh;
+
+          &.selected {
+            width: 40vw;
+          }
+        }
+      }
+
+      hr {
+        border: none;
+        width: 90%;
+        height: 1px;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+      }
+
+      .RenderedProjects {
+        min-height: 65vh;
+        height: 60vh;
+
+        .SliderButtonsDiv {
+          display: none;
+        }
+
+        .Slider {
+          overflow-y: hidden;
+          overflow-x: scroll;
+
+          &::-webkit-scrollbar-track {
+            background-color: transparent;
+          }
+          &::-webkit-scrollbar {
+            height: 1px;
+          }
+        }
+
+        .Slide {
+          height: auto;
+          /* Projects Components */
+
+        }
+      }
+    }
+
+    .ContactView {
+      height: 100vh;
+
+      .ContactSectionTitle {
+        font-size: 5vw;
+        height: 20%;
+      }
+
+      form {
+        width: 80%;
+        height: 60%;
+
+
+        div {
+          width: 100%;
+
+          &:nth-child(1) {
+            height: 20%;
+
+            input {
+              height: 30%;
+            }
+          }
+
+          &:nth-child(2) {
+            height: 20%;
+
+            input {
+              height: 30%;
+            }
+          }
+
+          &:nth-child(3) {
+            height: 50%;
+          }
+
+          label {
+            font-size: 3.5vw;
+          }
+
+          input {
+            margin: 0;
+            padding: 0;
+            width: 70%;
+            font-size: 4vw;
+
+          }
+
+          textarea {
+            font-size: 4vw;
+
+            &::-webkit-scrollbar-track {
+              background-color: transparent;
+              /* Couleur de fond de la piste */
+            }
+          }
+        }
+
+        button {
+          width: 30%;
+          height: 8%;
+          font-size: 3vw;
+        }
+
+
+      }
+    }
+  }
+}

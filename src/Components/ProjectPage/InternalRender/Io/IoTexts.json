@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "LangAcronym": "EN",
+        "Data": {
+            "Title": "Io",
+            "Status": "Currently under development",
+            "Infos": {
+                "info1": "Powered by Raspberry Pi 4",
+                "info2": "Infrared Night Vision and 160° Field of View",
+                "info3": "IMU 9 DoF: Magnetic Compass - Gyroscope - Accelerometer",
+                "info4": "Barometer: Temperature - Pressure - Humidity"
+            },
+            "ArchiveTitle": "Archives"
+        }
+    },
+    {
+        "id": 1,
+        "LangAcronym": "FR",
+        "Data": {
+            "Title": "Io",
+            "Status": "Actuellement en cours de développement",
+            "Infos": {
+                "info1": "Alimenté par Raspberry Pi 4",
+                "info2": "Vision Nocturne Infrarouge et Angle de Vue de 160°",
+                "info3": "IMU 9 DoF : Boussole Magnétique - Gyroscope - Accéléromètre",
+                "info4": "Baromètre : Température - Pression - Humidité"
+            },
+            "ArchiveTitle": "Archives"
+        }
+    }
+]
